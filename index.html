@@ -4,38 +4,85 @@
         <title>Experience VR</title>
     </head>
     <body>
-        <h1>Experience VR</h1>
+       <div> <!-- Wraper div and enables positioning of main content -->
+            <header>
+                <h1>Experience VR</h1>
+                <p>A simple blog about virtual reality experiences</p>
+                <nav> <!-- Only!! for major sections of navigation -->
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-        <p>A simple blog about virtual reality experiences</p>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Articles</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        
-        <p>Virtual Reality is becoming well known as a form of entertainment, but it's also finding its way into fields like education, industrial design, healthcare and so much more!</p>
-        <a href="https://teamtreehouse.com/vr" target="_blank">Start Your VR Journey</a>
-        <h2>Latest VR articles</h2>
+            <div>
+                <p>Virtual Reality is becoming well known as a form of entertainment, but it's also finding its way into fields like education, industrial design, healthcare and so much more!</p>
+                <a href="https://teamtreehouse.com/vr" target="_blank">Start Your VR Journey</a>
+            </div>
 
-        <h3>How Schools Use Virtual Reality to Improve Education</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices euismod turpis eget porta. 
-            Etiam nulla massa, pretium et massa nec, ornare dignissim nisi.
-        </p>
-        <a href="#">Read more</a>
+            <main>
+            <section>  
+                <h2>About this site</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices euismod turpis eget porta. 
+                Etiam nulla massa, pretium et massa nec, ornare dignissim nisi.</p>
+            </section>
 
-        <h3>The Advantages of VR simulation</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices euismod turpis eget porta. 
-            Etiam nulla massa, pretium et massa nec, ornare dignissim nisi.
-        </p>
-        <a href="#">Read more</a>
+            <section>
+                <h2>Latest VR articles</h2>
+                
+                <article> <!-- Should contain heading, always -->
+                    <header> <!-- Wazne. Wyglada jak w Reutersie -->
+                        <h3>How Schools Use Virtual Reality to Improve Education</h3>
+                        <p>By: Chris Koziel</p>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices euismod turpis eget porta. 
+                    Etiam nulla massa, pretium et massa nec, ornare dignissim nisi.
+                    </p>
+                    <a href="article.html">Read more</a>
+                    <footer>Published February 4, 2019</footer> <!-- Interesting... similar to reuters? -->
+                </article>
 
-        <h3>Top VR Resources</h3>
-        <ol>
-            <li><a href="#">Learn to create educational experiences in VR</a></li>
-            <li><a href="#">Virtual Reality in Entertainment</a></li>
-            <li><a href="#">Interact with buildings and products in VR</a></li>
-            <li><a href="#">Use VR for teleconferencing and social media</a></li>
-        </ol>
+                <article>
+                    <header>
+                        <h3>The Advantages of VR simulation</h3>
+                        <p>By: Chris Koziel</p>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices euismod turpis eget porta. 
+                        Etiam nulla massa, pretium et massa nec, ornare dignissim nisi.
+                    </p>
+                    <a href="article.html">Read more</a>
+                    <footer>Published February 5, 2019</footer>
+                </article>
+            </section>
+
+            <section>
+                <h2>Contact</h2>
+                <p>Email us at coolvrexperience@gmail.com</p>
+            </section>
+        </main>
+
+            <aside> <!-- Usually for sidebars -->
+                <h3>Top VR Resources</h3>
+                <ol>
+                    <li><a href="#">Learn to create educational experiences in VR</a></li>
+                    <li><a href="#">Virtual Reality in Entertainment</a></li>
+                    <li><a href="#">Interact with buildings and products in VR</a></li>
+                    <li><a href="#">Use VR for teleconferencing and social media</a></li>
+                </ol>
+                <blockquote>"Virtual reality was once the dream of science fiction. But the internet was also once a dream, and so were computers and smartphones. 
+                    The future is coming." 
+                    <footer> <!-- You can use multiple headers and footer in one page! -->
+                         - <cite><a href="https://www.facebook.com/zuck/posts/10101319050523971" target="_blank">Mark Zuckerberg</a></cite>
+                    </footer>
+                </blockquote>
+            </aside>
+
+            <footer>
+                <p>&copy;2019 Experience VR, The Blog</p>
+            </footer>
+        </div>
     </body>
 </html>
